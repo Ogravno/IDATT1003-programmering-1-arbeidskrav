@@ -42,23 +42,23 @@ public class Main {
                     System.out.print("Månedslønn: ");
                     double salaryInput = inputScanner.nextDouble();
                     employee.setMonthlySalary(salaryInput);
-                    result = Double.toString(employee.getMonthlySalary());
+                    System.out.println(Double.toString(employee.getTaxPerMonth()));
                     break;
                 case 2:
                     System.out.print("Skatteprosent");
                     int taxPercentageInput = inputScanner.nextInt();
                     employee.setTaxPercentage(taxPercentageInput);
-                    result = Integer.toString(employee.getTaxPercentage());
+                    System.out.println(Integer.toString(employee.getTaxPercentage()));
+                    System.out.println(Double.toString(employee.getTaxPerMonth()));
                     break;
                 case 3:
                     System.out.print("År: ");
                     int yearsInput = inputScanner.nextInt();
-                    result = Boolean.toString(employee.beenHiredFor(yearsInput));
+                    System.out.println(Boolean.toString(employee.beenHiredFor(yearsInput)));
                     break;
                 default:
-                    result = "not a valid input";
+                    System.out.println("not a valid input");
             }
-            System.out.println(result);
         }
     }
 }

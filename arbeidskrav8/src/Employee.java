@@ -48,7 +48,7 @@ public class Employee {
     }
 
     public double getTaxPerMonth() {
-        return (monthlySalaryOre * 100) * ((double) taxPercentage / 100);
+        return ((double) monthlySalaryOre / 100) * ((double) taxPercentage / 100);
     }
 
     public double getGrossSalary() {
