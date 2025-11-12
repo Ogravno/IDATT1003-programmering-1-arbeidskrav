@@ -12,6 +12,7 @@ public class UserInterface {
   private final int EXIT = 9;
 
   private void printProperty(Property property) {
+    System.out.println("\n");
     System.out.println("Municipality number: " + property.getMunicipalityNumber());
     System.out.println("Municipality name: " + property.getMunicipalityName());
     System.out.println("Lot number:" + property.getLotNumber());
@@ -30,11 +31,11 @@ public class UserInterface {
     System.out.print("Municipality name: ");
     String municipalyName = sc.nextLine();
 
-    System.out.print("Lot number:");
+    System.out.print("Lot number: ");
     int lotNumber = sc.nextInt();
     sc.nextLine();
 
-    System.out.print("Section number:");
+    System.out.print("Section number: ");
     int sectionNumber = sc.nextInt();
     sc.nextLine();
 
@@ -57,11 +58,11 @@ public class UserInterface {
     int municipalyNumber = sc.nextInt();
     sc.nextLine();
 
-    System.out.print("Lot number:");
+    System.out.print("Lot number: ");
     int lotNumber = sc.nextInt();
     sc.nextLine();
 
-    System.out.print("Section number:");
+    System.out.print("Section number: ");
     int sectionNumber = sc.nextInt();
     sc.nextLine();
 
