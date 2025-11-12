@@ -11,6 +11,10 @@ import java.util.stream.Collectors;
 public class PropertyRegister {
   List<Property> properties = new ArrayList<Property>();
 
+  public List<Property> getProperties() {
+    return properties;
+  }
+
   /**
    * Registers a new property with every attribute.
    *
